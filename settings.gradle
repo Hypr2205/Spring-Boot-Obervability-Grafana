@@ -1,3 +1,4 @@
 rootProject.name = 'observability'
 
 include 'loans-service'
+include 'fraud-detection-service'
