@@ -1,0 +1,15 @@
+version: "4"
+
+services:
+  mysql:
+    image: mysql:8.0-bookworm
+    container_name: mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+    ports:
+      - "3306:3306"
+    volumes:
+      - ./mysql-data:/var/lib/mysql
+      - ./docker/mysql/init.sql:/docker-entrypoint-initdb.d/init.sql
+volumes:
+  mysql-data:
