@@ -22,6 +22,7 @@ repositories {
 }
 
 dependencies {
+	implementation 'com.github.loki4j:loki-logback-appender:1.5.1'
 	implementation 'org.springframework.boot:spring-boot-starter-data-jdbc'
 	implementation 'org.springframework.boot:spring-boot-starter-validation'
 	implementation 'org.springframework.boot:spring-boot-starter-web'
