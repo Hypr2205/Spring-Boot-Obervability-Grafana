@@ -29,4 +29,6 @@ management:
   observations:
     key-values:
       application: fraud-detection-service
-
+  tracing:
+    sampling:
+      probability: 1.0
